@@ -12,7 +12,9 @@ if(isset($_POST["submit"]) && ($_POST["submit"]=="Login")){
         $num=mysqli_num_rows($result);
         if($num){
             $row=mysqli_fetch_array($result);
-            echo $row[0];
+//            $url="time.php";
+//            header("location:$url");
+            echo $row[2];
         }
         else{
             echo "<script>alert('账号或密码错误');</script>";

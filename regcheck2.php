@@ -4,7 +4,7 @@ if(isset($_POST["submit"]) && ($_POST["submit"]=="Register")){
     $psw=$_POST["password"];
     $psw_confirm=$_POST["confirm"];
     if($user==""||$psw==""||$psw_confirm==""){
-        echo "<script>alert('Please input username or password.')";
+        echo "<script>alert('Please input username or password.');</script>";
     }
     else{
         if($psw==$psw_confirm){
