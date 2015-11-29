@@ -1,5 +1,6 @@
 <?php
-if(isset($_POST["submit"]) && ($_POST["submit"]=="Login")){
+echo "111";
+if(isset($_POST["submit"]) && ($_POST["submit"]=="登录")){
     $email = $_POST["email"];
     $psw = $_POST["password"];
     if($email = ""||$psw = ""){
